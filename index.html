@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: #001f3f; /* Azul-marinho */
-            color: #ffffff; /* Texto branco */
+            color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -26,10 +26,6 @@
             text-align: center;
         }
 
-        section {
-            padding: 20px;
-        }
-
         iframe {
             display: block;
             margin: 20px auto;
@@ -37,22 +33,29 @@
 
         .categoria-videos {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .categoria-videos a {
-            margin: 10px 0;
             text-decoration: none;
             color: #ffffff;
+            text-align: center;
         }
 
         .categoria-videos img {
-            width: 300px;
+            width: 200px;
             height: auto;
-            margin-top: 5px;
             border: 2px solid #ffffff;
             border-radius: 5px;
+            display: block;
+            margin: 5px auto;
+        }
+
+        .categoria-videos a:hover {
+            color: #FFD700; /* Efeito hover dourado */
         }
     </style>
 </head>
@@ -61,37 +64,37 @@
         MusicFlix
     </header>
     <h1>Músicas que Contam uma História</h1>
+    <p style="text-align: center;">Clássicos do rock que marcam momentos e contam histórias inesquecíveis.</p>
 
-    <p style="text-align: center;">Desfrute de clássicos do rock que narram histórias marcantes.</p>
     <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/sgXrs1vIsnc" 
-        title="Bohemian Rhapsody" frameborder="0" 
+        src="https://www.youtube.com/embed/fJ9rUzIMcZQ" 
+        title="Bohemian Rhapsody - Queen" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
     </iframe>
 
     <section>
         <h2>Lista de Músicas</h2>
-        <div class="categoria-videos"> 
+        <div class="categoria-videos">
             <a href="https://www.youtube.com/watch?v=tAGnKpE4NCI" target="_blank">
-                Stairway to Heaven - Led Zeppelin
                 <img src="https://img.youtube.com/vi/tAGnKpE4NCI/0.jpg" alt="Stairway to Heaven">
+                Stairway to Heaven - Led Zeppelin
             </a>
             <a href="https://www.youtube.com/watch?v=Rbm6GXllBiw" target="_blank">
-                November Rain - Guns N' Roses
                 <img src="https://img.youtube.com/vi/Rbm6GXllBiw/0.jpg" alt="November Rain">
+                November Rain - Guns N' Roses
             </a>
             <a href="https://www.youtube.com/watch?v=OMOGaugKpzs" target="_blank">
-                Hotel California - Eagles
                 <img src="https://img.youtube.com/vi/OMOGaugKpzs/0.jpg" alt="Hotel California">
+                Hotel California - Eagles
             </a>
             <a href="https://www.youtube.com/watch?v=9X_ViIPA-Gc" target="_blank">
-                Smoke on the Water - Deep Purple
                 <img src="https://img.youtube.com/vi/9X_ViIPA-Gc/0.jpg" alt="Smoke on the Water">
+                Smoke on the Water - Deep Purple
             </a>
             <a href="https://www.youtube.com/watch?v=l482T0yNkeo" target="_blank">
-                Wish You Were Here - Pink Floyd
                 <img src="https://img.youtube.com/vi/l482T0yNkeo/0.jpg" alt="Wish You Were Here">
+                Wish You Were Here - Pink Floyd
             </a>
         </div>
     </section>
